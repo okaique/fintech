@@ -1,0 +1,113 @@
+.layoutContainer .modalContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background-color: #000000ed;
+    z-index: -10;
+    overflow: hidden;
+    transition: all 1s;
+    opacity: 0;
+}
+.layoutContainer .modalContainer .modal{
+    max-width: 420px;
+    min-height: 300px;
+    width: 100%;
+    height: auto;
+    background-color: var(--dark-color);
+    border: 1px solid var(--border-dark);
+    border-radius: 16px;
+    padding: 24px;
+    position: relative;
+}
+.layoutContainer .modalContainer .modal .modalHeader{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+.layoutContainer .modalContainer .modal .modalHeader h2{
+    color: var(--white);
+    font-size: 18px;
+}
+.layoutContainer .modalContainer .modal .modalHeader .closeModalBtn {
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.layoutContainer .modalContainer .modal .modalHeader .closeModalBtn svg {
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke: #fff;
+    color: #fff;
+    stroke-width: 2;
+    transition: all .1s;
+}
+.layoutContainer .modalContainer .modal .modalHeader .closeModalBtn svg path{
+    stroke: #fff;
+    color: #fff;
+    transition: all .1s;
+}
+.layoutContainer .modalContainer .modal .modalHeader .closeModalBtn:hover svg,
+.layoutContainer .modalContainer .modal .modalHeader .closeModalBtn:hover svg path{
+    stroke: red;
+    color: red;
+}
+.layoutContainer .modalContainer .modal .form{
+    width: 100%;
+}
+.layoutContainer .modalContainer .modal .form .inputContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 16px;
+}
+.layoutContainer .modalContainer .modal .form .inputContainer label {
+    color: var(--gray-text);
+    font-size: 14px;
+    font-weight: 400;
+}
+.layoutContainer .modalContainer .modal .form .inputContainer input{
+    width: 100%;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--white);
+    border: 1px solid var(--border-dark);
+    border-radius: 0.75rem;
+    padding: 14px 16px;
+    margin-top: 5px;
+    transition: all .5s;
+}
+.layoutContainer .modalContainer .modal .form .inputContainer input:focus{
+    outline: none;
+    border-color: var(--primary-color);
+}
+.layoutContainer .modalContainer .modal .form .inputContainer input::placeholder{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--gray-text);
+}
+.layoutContainer .modalContainer .modal .form .submitBtn{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    padding: 14px;
+    margin-top: 20px;
+    transition: all 1s;
+}
+.layoutContainer .modalContainer .modal .form .submitBtn:focus,
+.layoutContainer .modalContainer .modal .form .submitBtn:hover {
+    background-color: #218838;
+}

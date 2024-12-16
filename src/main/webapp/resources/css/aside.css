@@ -1,0 +1,68 @@
+.layoutContainer .layoutAside{
+    border-right: 1px solid var(--border-dark);
+    padding: 1.5rem;
+}
+.layoutContainer .layoutAside aside{
+    height: 100%;
+}
+.layoutContainer .layoutAside aside .asideInner{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.layoutContainer .layoutAside aside .asideInner .asideContent ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.layoutContainer .layoutAside aside .asideInner .asideContent ul li{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+}
+.layoutContainer .layoutAside aside .asideInner .asideContent ul li a,
+.layoutContainer .layoutAside aside .asideInner .asideLeave a{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: var(--gray-text);
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    transition: all 1s;
+}
+.layoutContainer .layoutAside aside .asideInner .asideContent ul li a:hover{
+    background-color: var(--border-dark);
+    color: var(--white);
+}
+.layoutContainer .layoutAside aside .asideInner .asideLeave{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.layoutContainer .layoutAside aside .asideInner .asideLeave a{
+    color: var(--red-color);
+}
+.layoutContainer .layoutAside aside .asideInner .asideLeave a:hover{
+    color: var(--white);
+    background-color: var(--red-color);
+}
+.layoutContainer .layoutAside aside .asideInner .asideLeave #theme-toggle:hover{
+    color: var(--white) !important;
+    background-color: var(--border-dark);
+}
+.layoutContainer .layoutAside aside .asideInner .asideLeave a svg,
+.layoutContainer .layoutAside aside .asideInner .asideLeave a svg path{
+    transition: all 1s;
+}
+.layoutContainer .layoutAside aside .asideInner .asideLeave a:hover svg,
+.layoutContainer .layoutAside aside .asideInner .asideLeave a:hover svg path{
+    color: var(--white);
+    fill: var(--white);
+}

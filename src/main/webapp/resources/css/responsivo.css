@@ -1,0 +1,56 @@
+/* HOME */
+@media (max-width: 1200px) {
+    .layoutMain .layoutBody .firstSection .rightContainer .contentContainer .transactionTable thead tr th{
+        font-size: 12px;
+    }
+    .layoutMain .layoutBody .firstSection .rightContainer .contentContainer .transactionTable tbody tr td{
+        font-size: 14px;
+    }
+}
+@media (max-width: 1024px) {
+    .layoutContainer .layoutAside{
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .layoutMain .layoutBody{
+        padding: 0.5rem;
+    }
+    .layoutMain .layoutBody .firstSection{
+        flex-direction: column;
+    }
+    .layoutMain .layoutBody .firstSection .leftContainer{
+        max-width: 100%;
+    }
+}
+@media (max-width: 425px) {
+    .layoutMain .layoutBody .firstSection .rightContainer .contentContainer{
+        padding: 1rem;
+    }
+    .layoutMain .layoutBody .firstSection .rightContainer .contentContainer .contentContainerTitle{
+        flex-direction: column;
+        align-items: start;
+        gap: 12px;
+    }
+    .layoutMain .layoutBody .firstSection .rightContainer .contentContainer .transactionTableContainer{
+        padding: 0;
+    }
+    .layoutMain .layoutBody .firstSection .rightContainer .contentContainer .transactionTable tbody tr td{
+        font-size: 10px;
+    }
+}
+/* FIM HOME */
+/* LOGIN */
+
+@media (max-width: 768px) {
+    .layoutContainer .layoutMain .layoutBody .formContainer{
+        border-radius: 1rem;
+    }
+    .layoutContainer .layoutMain .layoutBody .formContainer .formContentBox{
+        padding: 1rem;
+    }
+    .layoutContainer .layoutMain .layoutBody .formContainer .formContentBox:last-child{
+        display: none;
+    }
+}
+/* FIM LOGIN */

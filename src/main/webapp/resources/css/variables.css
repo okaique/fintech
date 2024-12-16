@@ -1,0 +1,11 @@
+/* variables.css */
+:root {
+    --dark-color: #0E0F12;
+    --primary-color: #68E570;
+    --red-color: #DB4931;
+    --border-white: #dee3ea;
+    --border-dark: #202228;
+    --gray-text: #848894;
+    --text-theme-white: #0f172a;
+    --white: #fff;
+}

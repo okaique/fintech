@@ -1,0 +1,289 @@
+.layoutContainer{
+    min-height: 100vh;
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
+.layoutMain{
+    width: 100%;
+    overflow: auto;
+}
+.layoutMain .layoutBody{
+    max-width: 1240px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 2rem; /* MUDAR RESPONSIVO PARA 1REM 768*/
+}
+.layoutMain .layoutBody .firstSection{
+    width: 100%;
+    display: flex;
+    flex-direction: row; /* MUDAR RESPONSIVO PARA COLUMN 768*/
+    gap: 2rem;
+}
+.layoutMain .layoutBody .firstSection .leftContainer{
+    max-width: 406px; /* MUDAR RESPONSIVO PARA 326PX 768 */ /* MUDAR RESPONSIVO PARA 100% QUANDO MENOR QUE 768 */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+.layoutMain .layoutBody .firstSection .leftContainer .accountInfo{
+    min-height: 162px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border: 1px solid var(--border-dark);
+    border-radius: 1rem;
+    padding: 24px;
+}
+.layoutMain .layoutBody .firstSection .leftContainer .accountInfo .accountImg{
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    background-color: #68E570;
+}
+.layoutMain .layoutBody .firstSection .leftContainer .accountInfo .accountDetails{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.layoutMain .layoutBody .firstSection .leftContainer .accountInfo .accountDetails h3{
+    color: var(--white);
+}
+.layoutMain .layoutBody .firstSection .leftContainer .accountInfo .accountDetails .accountAmount{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.layoutMain .layoutBody .firstSection .leftContainer .accountInfo .accountDetails .accountAmount p{
+    color: var(--gray-text);
+}
+.layoutMain .layoutBody .firstSection .leftContainer .transactionHistory{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--border-dark);
+    border-radius: 1rem;
+    transition: all 1s;
+}
+.layoutMain .layoutBody .firstSection .leftContainer .transactionHistory .circleGraphContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+.layoutMain .layoutBody .firstSection .leftContainer .transactionHistory .circleGrap{
+    max-width: 178px;
+    max-height: 178px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.layoutMain .layoutBody .firstSection .leftContainer .transactionHistory .circleGraphContainer .circleGrap svg{
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+}
+.layoutMain .layoutBody .firstSection .leftContainer .transactionHistory .circleGraphContainer .circleGrap svg .circleGrapBackground{
+    color: var(--border-dark);
+    transition: all 1s;
+}
+.layoutMain .layoutBody .firstSection .leftContainer .transactionHistory .circleGraphContainer .circleGrap svg .circleGrapProgress{
+    color: var(--primary-color);
+}
+.layoutMain .layoutBody .firstSection .leftContainer .transactionHistory .circleGrap .currentBalanceDetails{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    position: absolute;
+}
+.layoutMain .layoutBody .firstSection .leftContainer .transactionHistory .circleGrap .currentBalanceDetails .currentBalanceTitle{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--white);
+}
+.layoutMain .layoutBody .firstSection .leftContainer .transactionHistory .circleGrap .currentBalanceDetails .currentBalance{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--primary-color);
+}
+.layoutMain .layoutBody .firstSection .leftContainer .transactionHistory .transactionHistoryDivisor{
+    width: 100%;
+    border-color: var(--border-dark);
+    transition: all 1s;
+    opacity: 0.3;
+}
+.layoutMain .layoutBody .firstSection .leftContainer .transactionHistory .transactionsValuesContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.layoutMain .layoutBody .firstSection .leftContainer .transactionHistory .transactionsValuesContainer .transactionValueBox{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+.layoutMain .layoutBody .firstSection .leftContainer .transactionHistory .transactionsValuesContainer .transactionValueBox:first-child{
+    border-right: 1px solid var(--border-dark);
+}
+.layoutMain .layoutBody .firstSection .leftContainer .transactionHistory .transactionsValuesContainer .transactionValueTitle{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--white);
+}
+.layoutMain .layoutBody .firstSection .leftContainer .transactionHistory .transactionsValuesContainer .transactionValue{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    color: var(--white);
+}
+.layoutMain .layoutBody .firstSection .leftContainer .transactionHistory .transactionsValuesContainer .currentIncomeValue{
+    color: var(--primary-color);
+}
+.layoutMain .layoutBody .firstSection .leftContainer .transactionHistory .transactionsValuesContainer .currentExpenseValue{
+    color: var(--red-color);
+}
+.layoutMain .layoutBody .firstSection .leftContainer .btnTransaction{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background-color: transparent;
+    border: 1px solid var(--border-dark);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    transition: all 1s;
+}
+.layoutMain .layoutBody .firstSection .leftContainer .btnTransaction:hover{
+    background-color: var(--border-dark);
+    cursor: pointer;
+}
+.layoutMain .layoutBody .firstSection .leftContainer .btnTransaction .iconBtnTransaction{
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+}
+.layoutMain .layoutBody .firstSection .leftContainer .btnTransaction .iconBtnIncome{
+    background-color: #68e5703d;
+}
+.layoutMain .layoutBody .firstSection .leftContainer .btnTransaction .iconBtnExpense{
+    background-color: #db49313d;
+}
+.layoutMain .layoutBody .firstSection .leftContainer .btnTransaction .btnTransactionDetails{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+.layoutMain .layoutBody .firstSection .leftContainer .btnTransaction .btnTransactionDetails .btnTransactionTitle{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+    color: var(--white);
+    transition: all 1s;
+}
+.layoutMain .layoutBody .firstSection .leftContainer .btnTransaction .btnTransactionDetails .btnTransactionDesc{
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 400;
+    color: var(--gray-text);
+    transition: all 1s;
+}
+.layoutMain .layoutBody .firstSection .rightContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.layoutMain .layoutBody .firstSection .rightContainer .contentContainer{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border: 1px solid var(--border-dark);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    transition: all 1s;
+}
+.layoutMain .layoutBody .firstSection .rightContainer .contentContainer .contentContainerTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.layoutMain .layoutBody .firstSection .rightContainer .contentContainer .contentContainerTitle h2{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    color: var(--white);
+    transition: all 1s
+}
+.layoutMain .layoutBody .firstSection .rightContainer .contentContainer .contentContainerTitle .filterSelect{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.layoutMain .layoutBody .firstSection .rightContainer .contentContainer .contentContainerTitle .filterSelect label{
+    font-size: 14px;
+    color: #fff;
+}
+.layoutMain .layoutBody .firstSection .rightContainer .contentContainer .contentContainerTitle .filterSelect select{
+    font-size: 12px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid var(--border-dark);
+    border-radius: 8px;
+    padding: 6px 8px;
+}
+.layoutMain .layoutBody .firstSection .rightContainer .contentContainer .contentContainerTitle .filterSelect select option{
+    margin-top: 4px;
+    background-color: var(--border-dark);
+}
+.layoutMain .layoutBody .firstSection .rightContainer .contentContainer .transactionTableContainer {
+    height: 100%;
+    overflow: auto;
+    padding-right: 4px;
+    position: relative;
+}
+.layoutMain .layoutBody .firstSection .rightContainer .contentContainer .transactionTable{
+    width: 100%;
+}
+.layoutMain .layoutBody .firstSection .rightContainer .contentContainer .transactionTable thead{
+    border-bottom: 1px solid var(--border-dark);
+}
+.layoutMain .layoutBody .firstSection .rightContainer .contentContainer .transactionTable thead tr th{
+    font-size: 14px;
+    font-weight: 500;
+    text-align: start;
+    color: var(--gray-text);
+    padding: 14px 0;
+    cursor: pointer;
+}
+.layoutMain .layoutBody .firstSection .rightContainer .contentContainer .transactionTable tbody tr td{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: start;
+    white-space: nowrap;
+    color: var(--white);
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border-dark);
+}

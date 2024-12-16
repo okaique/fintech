@@ -1,0 +1,192 @@
+.layoutContainer .layoutMain .layoutBody .formContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--border-dark);
+    border-radius: 2rem;
+    overflow: hidden;
+}
+.layoutContainer .layoutMain .layoutBody .formContainer .formContentBox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+.layoutContainer .layoutMain .layoutBody .formContainer .formContentBox:last-child{
+    background-color: var(--border-dark);
+}
+.layoutContainer .layoutMain .layoutBody .formContainer .formContentBox .formInfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 14px;
+}
+.layoutContainer .layoutMain .layoutBody .formContainer .formContentBox .formInfo h2{
+    font-family: "Outfit", sans-serif;
+    font-size: 1.375rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--white);
+}
+.layoutContainer .layoutMain .layoutBody .formContainer .formContentBox .formInfo h3{
+    font-family: "Outfit", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--white);
+}
+.layoutContainer .layoutMain .layoutBody .formContainer .formContentBox .formInfo p{
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--gray-text);
+}
+.layoutContainer .layoutMain .layoutBody .formContainer .formContentBox .formImage{
+    max-height: 200px;
+    height: 100%;
+}
+.layoutContainer .layoutMain .layoutBody .formContainer .formContentBox .formImage img{
+    height: 100%;
+}
+.layoutContainer .layoutMain .layoutBody .formContainer .formContentBox .form{
+    width: 100%;
+}
+.layoutContainer .layoutMain .layoutBody .formContainer .formContentBox .form .inputContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 16px;
+}
+.layoutContainer .layoutMain .layoutBody .formContainer .formContentBox .form .inputContainer .senhaMismatch{
+    color: var(--red-color);
+    font-size: 12px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 8px;
+    transition: all 1s;
+}
+.layoutContainer .layoutMain .layoutBody .formContainer .formContentBox .form .inputContainer .senhaRequisitos li{
+    color: #454843;
+    font-size: 12px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 8px;
+    transition: all 1s;
+}
+.layoutContainer .layoutMain .layoutBody .formContainer .formContentBox .form .inputContainer .senhaRequisitos li.valid{
+    color: var(--primary-color);
+}
+.layoutContainer .layoutMain .layoutBody .formContainer .formContentBox .form .inputContainer label {
+    color: var(--gray-text);
+    font-size: 14px;
+    font-weight: 400;
+}
+.layoutContainer .layoutMain .layoutBody .formContainer .formContentBox .form .inputContainer input{
+    width: 100%;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--white);
+    border: 1px solid var(--border-dark);
+    border-radius: 0.75rem;
+    padding: 14px 16px;
+    margin-top: 5px;
+    transition: all .5s;
+}
+.layoutContainer .layoutMain .layoutBody .formContainer .formContentBox .form .inputContainer input:focus{
+    outline: none;
+    border-color: var(--primary-color);
+}
+.layoutContainer .layoutMain .layoutBody .formContainer .formContentBox .form .inputContainer input::placeholder{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--gray-text);
+}
+.layoutContainer .layoutMain .layoutBody .formContainer .formContentBox .form .inputContainer .passwordContainer{
+    position: relative;
+}
+.layoutContainer .layoutMain .layoutBody .formContainer .formContentBox .form .inputContainer .passwordContainer .togglePassword {
+    top: 60%;
+    right: 10px;
+    font-size: 1rem;
+    background: none;
+    border: none;
+    border-radius: 4px;
+    transform: translateY(-50%);
+    padding: 4px;
+    position: absolute;
+    cursor: pointer;
+    transition: all 1s;
+}
+.layoutContainer .layoutMain .layoutBody .formContainer .formContentBox .form .inputContainer .passwordContainer .togglePassword img{
+    width: 22px;
+    pointer-events: none;
+}
+.layoutContainer .layoutMain .layoutBody .formContainer .formContentBox .form .inputContainer .passwordContainer .togglePassword:focus {
+    outline: 0;
+    border: 1px solid var(--primary-color);
+}
+.layoutContainer .layoutMain .layoutBody .formContainer .formContentBox .form .inputContainer .forgotPassword{
+    width: fit-content;
+    font-size: 12px;
+    text-align: left;
+    text-decoration: none;
+    color: var(--gray-text);
+    padding-bottom: 2px;
+    margin-top: 8px;
+    transition: all 1s;
+}
+.layoutContainer .layoutMain .layoutBody .formContainer .formContentBox .form .inputContainer .forgotPassword:hover{
+    color: var(--primary-color);
+}
+.layoutContainer .layoutMain .layoutBody .formContainer .formContentBox .form .inputContainer .forgotPassword:focus{
+    color: var(--primary-color);
+    outline: 0;
+    border-bottom: 1px solid var(--primary-color);
+}
+.layoutContainer .layoutMain .layoutBody .formContainer .formContentBox .form .submitBtn{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    padding: 14px;
+    margin-top: 20px;
+    transition: all 1s;
+}
+.layoutContainer .layoutMain .layoutBody .formContainer .formContentBox .form .submitBtn:disabled{
+    opacity: .5;
+}
+.layoutContainer .layoutMain .layoutBody .formContainer .formContentBox .form .submitBtn:focus,
+.layoutContainer .layoutMain .layoutBody .formContainer .formContentBox .form .submitBtn:hover {
+    background-color: #218838;
+}
+.layoutContainer .layoutMain .layoutBody .formContainer .formContentBox .form .registerLink {
+    width: fit-content;
+    display: flex;
+    gap: 4px;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--gray-text);
+    margin: 16px auto 0;
+    transition: all 1s;
+}
+.layoutContainer .layoutMain .layoutBody .formContainer .formContentBox .form .registerLink:hover{
+    color: var(--primary-color);
+}
+.layoutContainer .layoutMain .layoutBody .formContainer .formContentBox .form .registerLink:focus{
+    color: var(--primary-color);
+    outline: 0;
+    border-bottom: 1px solid var(--primary-color);
+}
